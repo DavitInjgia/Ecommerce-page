@@ -1,0 +1,10 @@
+.nav-list{
+    list-style: none;
+    color: #69707D;
+    font-size: 15px;
+    font-weight: 400;
+}
+.nav-list:hover{
+    cursor: pointer;
+    color: #1D2026;
+}
