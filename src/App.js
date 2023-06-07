@@ -7,7 +7,7 @@ import DropdownEmpty from "./genericComponents/Header/components/UserInfo/Cart/c
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <ProductDetails />
       {/* <DropdownEmpty/> */}
     </>
