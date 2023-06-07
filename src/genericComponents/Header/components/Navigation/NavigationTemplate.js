@@ -4,11 +4,11 @@ function NavigationTemplate(props) {
   return (
     <nav>
       <ul className="nav-items">
-        {props.collections}
-        {props.men}
-        {props.women}
-        {props.about}
-        {props.contact}
+        <li>{props.collections}</li>
+        <li>{props.men}</li>
+        <li>{props.women}</li>
+        <li>{props.about}</li>
+        <li>{props.contact}</li>
       </ul>
     </nav>
   );
