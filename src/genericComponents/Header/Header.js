@@ -1,12 +1,16 @@
 import React from 'react'
 import HeaderTemplate from './HeaderTemplate'
+import logo from '../../assets/images/logo.svg'
+import Navigation from './components/Navigation/Navigation'
+import UserInfo from './components/UserInfo/UserInfo'
 
-function Header() {
+function Header(props) {
   return (
     <HeaderTemplate
-        logo = {<div style={{backgroundColor: "blue", width:"137.5px"}}>LOGO</div>}
-        // nav = {<div style={{backgroundColor: "green", width:"397px"}}>navigation</div>}
-        userInfo = {<div style={{backgroundColor: "cyan", width:"165px"}}>User Info</div>}
+        logo = {<img src={logo}></img>}
+        nav = {<Navigation/>}
+        userInfo = {<UserInfo handleCart={props.handleCart}/>}
+        dropdown = {props.dropdown}
     />
   )
 }

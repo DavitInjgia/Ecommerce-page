@@ -3,7 +3,7 @@ import NavigationTemplate from "./NavigationTemplate";
 
 function Navigation() {
   return <NavigationTemplate 
-  collection={"Collection"} 
+  collections={"Collection"} 
   men={"Men"}
   women= {"Women"}
   about={"About"}

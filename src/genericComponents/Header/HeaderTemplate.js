@@ -1,6 +1,6 @@
 import React from 'react'
 import './HeaderTemplate.css'
-import Navigation from './components/Navigation/Navigation'
+
 
 
 
@@ -9,7 +9,7 @@ function HeaderTemplate(props) {
     <header className='header'>
         <div className="logo-nav">
             {props.logo}
-            <Navigation/>
+            {props.nav}
         </div>    
         {props.userInfo}
     </header>
