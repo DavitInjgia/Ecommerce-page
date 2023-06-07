@@ -6,9 +6,11 @@ import './generalCSS/reset.css'
 import DropdownEmpty from './genericComponents/Header/components/UserInfo/Cart/components/components/DropdownEmpty';
 function App() {
   return (
-   <>
-  <ProductDetails/>
-   </>
+    <>
+      {/* <Header /> */}
+      <ProductDetails />
+      {/* <DropdownEmpty/> */}
+    </>
   );
 }
 
