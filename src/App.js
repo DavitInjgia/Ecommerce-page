@@ -10,9 +10,11 @@ function App() {
 
 
   return (
-   <>
-  <ProductDetails/>
-   </>
+    <>
+      {/* <Header /> */}
+      <ProductDetails />
+      {/* <DropdownEmpty/> */}
+    </>
   );
 }
 
