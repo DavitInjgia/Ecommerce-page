@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProductDetailsTemplate from "../Modules/ProductDetails/ProductDetailsTemplate";
 import Header from "../genericComponents/Header/Header";
 import Dropdown from "../genericComponents/Header/components/UserInfo/Cart/components/Dropdown";
+import ProductsMain from "../Modules/ProductDetails/ProductsMain";
 
 function ProductDetails() {
 
@@ -27,8 +28,10 @@ function ProductDetails() {
       }
       main={
         <div
-          style={{ height: "85dvh", backgroundColor: "aqua", width: "100%", zIndex:"0" }}
-        ></div>
+          style={{ height: "85dvh", backgroundColor: "#FFFFFF", width: "100%", zIndex:"0" }}
+        >
+          <ProductsMain/>
+        </div>
       }
     />
   );
