@@ -3,7 +3,8 @@ import "./Dropdown.css";
 import DropdownEmpty from "./components/DropdownEmpty";
 import DropdownFull from "./components/DropdownFull";
 
-function Dropdown() {
+function Dropdown(props) {
+
   return (
     <div id="the-main-dropdown">
       <div id="dropdown-headline">
@@ -11,7 +12,7 @@ function Dropdown() {
       </div>
       <hr id="dropdown-horizontal-rule"></hr>
       <div id="dropdown-list">
-        <DropdownFull/>
+        {props.data.length == 0 ? <DropdownEmpty/> : <DropdownFull data={props.data} removeItem={props.removeItem}/>}
       </div>
     </div>
   );

@@ -3,15 +3,17 @@ import ProductDetailsTemplate from "../Modules/ProductDetails/ProductDetailsTemp
 import Header from "../genericComponents/Header/Header";
 import Dropdown from "../genericComponents/Header/components/UserInfo/Cart/components/Dropdown";
 import ProductsMain from "../Modules/ProductDetails/ProductsMain";
+import { log } from "react-modal/lib/helpers/ariaAppHider";
+import { v4 as uuidv4 } from 'uuid';
+import cartImage from '../assets/images/image-product-1-thumbnail.jpg'
 
 function ProductDetails() {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
   const handleCartButtonClick = () => {
     setIsDropDownVisible(!isDropDownVisible);
-    console.log(isDropDownVisible);
   };
   const defaultObject = {
-    id: 1,
+    id: uuidv4(),
     title: "Sneaker Company",
     name: "Fall Limited Edition Sneakers",
     description:
@@ -20,6 +22,7 @@ function ProductDetails() {
     priceOriginal: 250,
     discount: 50,
     quantity: 0,
+    src: cartImage
   };
   const [myObject, setMyObject] = useState(defaultObject);
   const [data, setData] = useState([]);
@@ -32,17 +35,18 @@ function ProductDetails() {
     }
   };
   const handleAddItem = () => {
+    if (myObject.quantity > 0){
     setData(prevState => [...prevState, myObject]);
-    setMyObject(defaultObject);
+    setMyObject(defaultObject)}
   };
   // const addItem = (item) => {
   //   setData((prevData) => [...prevData, item]);
   // };
 
-  // const removeItem = (id) => {
-  //   setData((prevData) => prevData.filter((item) => item.id !== id));
-  // };
-
+  const removeItem = (id) => {
+    setData((prevData) => prevData.filter((item) => item.id !== id));
+  };
+console.log(data);
   return (
     <ProductDetailsTemplate
       header={
@@ -50,7 +54,7 @@ function ProductDetails() {
           style={{ height: "15dvh", backgroundColor: "#FFFFFF", width: "100%" }}
         >
           <Header handleCart={handleCartButtonClick} />
-          {isDropDownVisible && <Dropdown />}
+          {isDropDownVisible && <Dropdown data={data} removeItem={removeItem}/>}
         </div>
       }
       main={

@@ -4,9 +4,16 @@ import CheckoutBtn from './components/CheckoutBtn'
 import './DropdownFull.css'
 
 function DropdownFull(props) {
+
+
+console.log(props.data, "es aris dropdown full");
   return (
     <div id='dropdown-full-div'>
-    <SingleCartProduct/>
+
+{props.data.map((el) =>{
+  return <SingleCartProduct data={el} removeItem={props.removeItem}/>
+})}
+
     <CheckoutBtn/>
     </div>
   )

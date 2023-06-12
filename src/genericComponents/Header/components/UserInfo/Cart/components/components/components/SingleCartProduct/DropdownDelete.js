@@ -4,7 +4,7 @@ import deleteIcon from '../../../../../../../../../assets/images/icon-delete.svg
 
 function DropdownDelete(props) {
   return (
-    <button onClick={props.handleDelete} id='dropdown-delete-btn'>
+    <button onClick={() => props.removeItem(props.data.id)} id='dropdown-delete-btn'>
       <img src={deleteIcon}></img>
     </button>
   )

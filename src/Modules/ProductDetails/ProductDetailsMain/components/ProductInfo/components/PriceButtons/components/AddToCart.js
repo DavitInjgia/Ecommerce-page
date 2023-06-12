@@ -1,6 +1,6 @@
 import React from 'react'
 import './AddToCart.css'
-import cart from './../../../../../../../../assets/images/icon-cart.svg'
+import cart from './../../../../../../../../assets/images/addToCart.png'
 function AddToCart({handleAddItem}) {
   return (
     <div className="add-to-cart" onClick={handleAddItem}>

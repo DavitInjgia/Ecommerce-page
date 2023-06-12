@@ -2,7 +2,6 @@ import React from 'react';
 import './BurgerMenuNavPanel.css'
 
 function BurgerMenuNavPanel(props) {
-  console.log(props.navWidth);
   return (
     <div id='burger-nav-display' style={{width:props.navWidth, display:props.burgerNavDisplay}}>
       <a className="menu-item-link" href="/" style={{display:props.navItemDisplay}}>

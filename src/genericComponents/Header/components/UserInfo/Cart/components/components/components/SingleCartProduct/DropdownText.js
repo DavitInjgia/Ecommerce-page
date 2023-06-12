@@ -2,14 +2,18 @@ import React from 'react'
 import './DropdownText.css'
 
 function DropdownText(props) {
+
+  let totalPrice = props.data.price * props.data.quantity
+
+
   return (
     <div id='dropdown-product-description'>
       <p id='dropdown-product-name'>
-        {/* {props.productName} */} Fall Limited Edition Sneakers
+        {props.data.name}
         </p>
       <p id='dropdown-product-price'>
-        {/* {props.singleItemPrice} */} $125 x 3{/* {props.itemAmount} */}
-        <span id='dropdown-product-total-price'> $375.00 {/* {total price} */}
+        {props.data.price}  x {props.data.quantity}
+        <span id='dropdown-product-total-price'> {totalPrice}
         </span>
       </p>
     </div>
