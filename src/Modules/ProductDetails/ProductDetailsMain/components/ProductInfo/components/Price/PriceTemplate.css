@@ -1,0 +1,11 @@
+.price-now-orig{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.price{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
