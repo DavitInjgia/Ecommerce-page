@@ -1,5 +1,8 @@
 import React from "react";
 import "./NavigationTemplate.css";
+
+
+
 function NavigationTemplate(props) {
   return (
     <nav>

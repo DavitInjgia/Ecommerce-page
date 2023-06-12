@@ -3,6 +3,7 @@ import ProductDetailsTemplate from "../Modules/ProductDetails/ProductDetailsTemp
 import Header from "../genericComponents/Header/Header";
 import Dropdown from "../genericComponents/Header/components/UserInfo/Cart/components/Dropdown";
 import ProductsMain from "../Modules/ProductDetails/ProductsMain";
+
 function ProductDetails() {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
   const handleCartButtonClick = () => {
@@ -54,9 +55,6 @@ function ProductDetails() {
       }
       main={
         <ProductsMain myObject = {myObject} handleChangeQuantity={handleChangeQuantity} handleAddItem={handleAddItem} />
-        // <div
-        //   style={{ height: "85dvh", backgroundColor: "aqua", width: "100%", zIndex:"0" }}
-        // ></div>
       }
     />
   );

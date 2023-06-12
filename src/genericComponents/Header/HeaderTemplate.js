@@ -7,8 +7,11 @@ import './HeaderTemplate.css'
 function HeaderTemplate(props) {
   return (
     <header className='header'>
+      <div className='burger-nav'>
+        {props.burgerNav}
+      </div>
+      {props.logo}
         <div className="logo-nav">
-            {props.logo}
             {props.nav}
         </div>    
         {props.userInfo}

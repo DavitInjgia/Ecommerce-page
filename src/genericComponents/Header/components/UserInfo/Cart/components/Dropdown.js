@@ -1,5 +1,7 @@
 import React from "react";
 import "./Dropdown.css";
+import DropdownEmpty from "./components/DropdownEmpty";
+import DropdownFull from "./components/DropdownFull";
 
 function Dropdown() {
   return (
@@ -8,7 +10,9 @@ function Dropdown() {
         <h1 id="dowpdown-headline-cart">Cart</h1>
       </div>
       <hr id="dropdown-horizontal-rule"></hr>
-      <div id="dropdown-list"></div>
+      <div id="dropdown-list">
+        <DropdownFull/>
+      </div>
     </div>
   );
 }

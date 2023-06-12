@@ -12,3 +12,14 @@
     justify-content: flex-start;
     gap: 3rem;
 }
+.burger-nav{
+    display: none;
+}
+@media (max-width: 1000px) {
+    .logo-nav {
+      display: none;
+    }
+    .burger-nav{
+        display: flex;
+    }
+  }
