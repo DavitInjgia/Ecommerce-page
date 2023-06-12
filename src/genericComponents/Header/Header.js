@@ -13,7 +13,7 @@ function Header(props) {
 
   let navWidth;
   let navItemDisplay;
-  let nawItemOpacity;
+  let burgerNavDisplay;
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -22,11 +22,11 @@ function Header(props) {
   if (isMenuOpen == false) {
     navWidth = "0";
     navItemDisplay = "none";
-    nawItemOpacity = "0"
+    burgerNavDisplay = "none"
   } else {
     navWidth = "75%";
     navItemDisplay = "block";
-    nawItemOpacity = "1"
+    burgerNavDisplay = "flex"
   }
 
   return (
@@ -42,7 +42,7 @@ function Header(props) {
           </button>
           <BurgerMenuNavPanel
             navItemDisplay={navItemDisplay}
-            nawItemOpacity ={nawItemOpacity}
+            burgerNavDisplay ={burgerNavDisplay}
             navWidth={navWidth}
             collections={"Collection"}
             men={"Men"}

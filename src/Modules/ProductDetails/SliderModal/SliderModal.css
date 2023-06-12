@@ -93,3 +93,34 @@
   align-items: center;
   justify-content: center;
 }
+
+
+/* ეს რომ რესპონსივზე სლაიდერი გაქრეს */
+@media (max-width: 768px) {
+  .slider {
+    text-align: center;
+    width: 430px;
+    margin: 0 auto;
+    display: none;
+  }
+  .Modal {
+    position: relative;
+    background: transparent;
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: none;
+  }
+  .Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+}
