@@ -4,12 +4,12 @@ import DropdownImg from './SingleCartProduct/DropdownImg'
 import DropdownText from './SingleCartProduct/DropdownText'
 import DropdownDelete from './SingleCartProduct/DropdownDelete'
 
-function SingleCartProduct() {
+function SingleCartProduct(props) {
   return (
     <li id='single-cart-product'>
-        <DropdownImg/>
-        <DropdownText/>
-        <DropdownDelete/>
+        <DropdownImg {...props}/>
+        <DropdownText {...props}/>
+        <DropdownDelete {...props}/>
     </li>
   )
 }
