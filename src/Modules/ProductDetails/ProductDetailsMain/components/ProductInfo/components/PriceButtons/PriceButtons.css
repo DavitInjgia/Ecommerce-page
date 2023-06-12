@@ -2,4 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
+@media (max-width: 767px) {
+    .price-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+  }

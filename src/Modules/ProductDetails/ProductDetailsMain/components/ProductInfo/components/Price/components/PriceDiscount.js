@@ -2,7 +2,7 @@ import React from 'react'
 import './PriceDiscount.css'
 function PriceDiscount({discount}) {
   return (
-    <div>
+    <div id='discount-div'>
       <p className="price-discount">{discount}%</p>
     </div>
   )

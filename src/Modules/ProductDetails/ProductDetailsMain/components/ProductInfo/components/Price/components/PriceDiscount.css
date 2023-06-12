@@ -7,3 +7,11 @@
 
   color: #ff7e1b;
 }
+#discount-div{
+  background: #FFEEE2;
+border-radius: 6px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 5px;
+}
