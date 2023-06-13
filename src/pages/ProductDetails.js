@@ -39,9 +39,6 @@ function ProductDetails() {
     setData(prevState => [...prevState, myObject]);
     setMyObject(defaultObject)}
   };
-  // const addItem = (item) => {
-  //   setData((prevData) => [...prevData, item]);
-  // };
 
   const removeItem = (id) => {
     setData((prevData) => prevData.filter((item) => item.id !== id));
